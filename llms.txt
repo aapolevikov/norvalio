@@ -1,0 +1,21 @@
+# Norvalio
+
+> Norvalio is a full-cycle IT company based in Dubai, UAE. It designs, builds and launches websites, CRM systems, SEO and business automation for local and remote clients, working in English and Russian. The team has 5+ years of hands-on experience and focuses on fast, lightweight, mobile-first products.
+
+## Services
+- Websites & landing pages: custom design, multilingual (EN/RU/AR), lead forms to WhatsApp, SEO-ready, fast on mobile.
+- CRM systems: client and order records, dashboards, roles, integrations (Telegram, payments, maps), built around the client's process.
+- SEO & AI visibility: technical audit, Google and Yandex ranking, content and keywords, GEO/AI-search visibility, analytics.
+- Business automation: connecting tools and APIs, auto-reports and notifications, removing manual data entry, Telegram/WhatsApp bots.
+
+## Why Norvalio
+- One partner for the full cycle: design, development, SEO and support by one team.
+- Fast on any phone: clean lightweight code, no bulky page builders.
+- Built for Dubai and bilingual EN + RU clients.
+- Direct contact with the team, reply within a day.
+
+## Contact
+- Website: https://norvalio.com
+- Email: info@norvalio.com
+- WhatsApp: +971 56 817 8590
+- Location: Dubai, United Arab Emirates
