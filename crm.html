@@ -448,7 +448,7 @@
     var w=window.innerWidth||document.documentElement.clientWidth||0;
     var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var cn=navigator.connection||{}, sd=cn.saveData, mem=navigator.deviceMemory;
-    var capable=(w>=1024)&&!rm&&!sd&&!(mem&&mem<4);
+    var capable=!rm&&!sd&&!(mem&&mem<4);
     var cv=document.getElementById('c-three');
     if(!capable){ if(cv) cv.style.display='none'; return; }
     var start=function(){
