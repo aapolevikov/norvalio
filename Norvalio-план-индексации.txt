@@ -1,0 +1,104 @@
+NORVALIO — ПЛАН ИНДЕКСАЦИИ 11 СТРАНИЦ (Google + Яндекс)
+=======================================================
+Дата: 01.07.2026. Сайт: https://norvalio.com (файлы .ru.html, отдаются по чистым адресам через Netlify).
+
+ЧТО ЗАЛИВАЕМ (11 файлов в корень репозитория Norvalio → Netlify):
+  guides.ru.html                          (хаб-каталог)
+  guide-web-development-cost-dubai.ru.html
+  guide-website-for-business-uae.ru.html
+  guide-landing-vs-website.ru.html
+  guide-multilingual-website-dubai.ru.html
+  guide-seo-dubai.ru.html
+  guide-google-yandex-uae.ru.html
+  guide-crm-small-business-dubai.ru.html
+  guide-business-automation-uae.ru.html
+  guide-whatsapp-leads-website.ru.html
+  guide-choose-web-studio-dubai.ru.html
++ sitemap-guides.xml (по желанию — если ведёте отдельный sitemap; можно и просто дослать URL в основной)
+
+После заливки на GitHub → Netlify пересоберёт сайт ~90 сек → проверить любую страницу через Cmd+Shift+R.
+Открыть по адресу: https://norvalio.com/guides.ru.html  (и т.д.).
+
+
+ШАГ 0. ПРОВЕРКА ПЕРЕД ИНДЕКСАЦИЕЙ
+---------------------------------
+1. Открыть https://norvalio.com/guides.ru.html — каталог должен показать 10 карточек.
+2. Открыть 2-3 статьи из каталога — проверить, что открываются (не 404) и ссылки внутри работают.
+3. Только после этого — отправлять на индексацию.
+
+
+ЧАСТЬ A. GOOGLE SEARCH CONSOLE
+------------------------------
+Ресурс: добавить/использовать https://norvalio.com  (именно https, без www — как канонический адрес сайта).
+
+Если сайт ещё НЕ добавлен в GSC:
+  1. search.google.com/search-console → «Добавить ресурс» → «Ресурс с префиксом в URL» → https://norvalio.com
+  2. Подтвердить (проще всего — HTML-файл в корень репозитория, НЕ удалять его потом; либо запись DNS).
+  3. Отправить sitemap: раздел «Файлы Sitemap» → добавить sitemap.xml (основной сайта) и/или sitemap-guides.xml.
+
+Ручная индексация 11 новых страниц (лимит ~10-15 URL/сутки):
+  Верхняя строка «Проверка любого URL» → вставить ПОЛНЫЙ адрес → «Запросить индексирование».
+  Порядок (сначала хаб, потом коммерческие статьи):
+
+  Партия 1 (день 1):
+   https://norvalio.com/guides.ru.html
+   https://norvalio.com/guide-web-development-cost-dubai.ru.html
+   https://norvalio.com/guide-website-for-business-uae.ru.html
+   https://norvalio.com/guide-choose-web-studio-dubai.ru.html
+   https://norvalio.com/guide-landing-vs-website.ru.html
+
+  Партия 2 (день 2):
+   https://norvalio.com/guide-seo-dubai.ru.html
+   https://norvalio.com/guide-google-yandex-uae.ru.html
+   https://norvalio.com/guide-multilingual-website-dubai.ru.html
+   https://norvalio.com/guide-crm-small-business-dubai.ru.html
+
+  Партия 3 (день 3):
+   https://norvalio.com/guide-business-automation-uae.ru.html
+   https://norvalio.com/guide-whatsapp-leads-website.ru.html
+
+  Через 3-5 дней: GSC → «Индексирование → Страницы» — проверить, сколько в индексе.
+
+
+ЧАСТЬ B. BING WEBMASTER (бонус, 2 минуты — важно для ChatGPT-поиска)
+-------------------------------------------------------------------
+  1. bing.com/webmasters → войти.
+  2. «Import from GSC» — импортировать сайт из Google Search Console (самый быстрый способ).
+  3. Готово: Bing + DuckDuckGo + канал ChatGPT-поиска подхватят сайт из того же sitemap.
+
+
+ЧАСТЬ C. ЯНДЕКС.ВЕБМАСТЕР
+-------------------------
+Ресурс: добавить https://norvalio.com  (ОБЯЗАТЕЛЬНО как https, НЕ http — иначе данные раздвоятся).
+
+Если сайт ещё НЕ добавлен:
+  1. webmaster.yandex.ru → «Добавить сайт» → https://norvalio.com
+  2. Подтвердить прав — HTML-файлом в корень (положить файл, залить на GitHub, НЕ удалять) или метатегом/DNS.
+  3. «Индексирование → Файлы Sitemap» → добавить sitemap.xml (и/или sitemap-guides.xml).
+  4. «Информация о сайте → Регион сайта» → задать регион: Дубай (ОАЭ).
+
+Ускорить обход новых страниц:
+  «Индексирование → Переобход страниц» → вставлять по одному полному адресу из списка выше → отправить.
+  (Лимит переобхода в Яндексе небольшой — по несколько URL в день; остальное Яндекс возьмёт из sitemap сам.)
+
+Через 5-7 дней: «Индексирование → Страницы в поиске» — проверить, что статьи попали.
+
+
+ЧАСТЬ D. ПОСЛЕ ИНДЕКСАЦИИ (что улучшит результат)
+-------------------------------------------------
+1. Перелинковка: добавить ссылку на /guides.ru (хаб) в меню или подвал сайта — чтобы гиды были видны и людям, и поисковикам.
+   (Для этого нужно поправить существующие страницы Norvalio — пришлите их, добавлю пункт «Гиды» в навигацию/подвал.)
+2. Ссылки со страниц услуг на профильные гиды (websites.ru → cost/landing; seo.ru → seo/google-yandex; crm.ru → crm; automation.ru → automation).
+3. Соцсети Norvalio → в разметку sameAs (сейчас пусто) — когда будут ссылки.
+4. Реальные контакты: на сайте телефон/почта помечены «заглушка — подтвердить». В статьях я оставил тот же номер и почту, но БЕЗ пометки. Подтвердите реальные — если другие, поменяю во всех.
+5. Отзывы и упоминания (долгосрок) — главный рычаг доверия и попадания в ответы ИИ.
+
+
+КРАТКО ПО ПРИОРИТЕТУ
+--------------------
+[ ] Залить 11 файлов на GitHub → проверить, что открываются
+[ ] GSC: добавить https://norvalio.com, sitemap, запросить индексацию (Партии 1-3)
+[ ] Bing: импорт из GSC
+[ ] Яндекс.Вебмастер: добавить как https, sitemap, регион Дубай, переобход
+[ ] Через неделю — проверить индексацию в обоих
+[ ] Добавить «Гиды» в меню/подвал сайта (прислать страницы — доработаю перелинковку)
